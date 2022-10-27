@@ -6,3 +6,10 @@
 
 [provider.tf]: <https://github.com/amith-jayawardane/terraform-aws-asg-alb/blob/main/provider.tf>
 [user-data.sh]: <https://github.com/amith-jayawardane/terraform-aws-asg-alb/blob/main/modules/asg/user-data.sh>
+
+## How to Run
+```sh
+terraform init
+terraform plan
+terraform apply
+```
