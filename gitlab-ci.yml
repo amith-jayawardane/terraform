@@ -1,0 +1,10 @@
+upload to s3:
+  image:
+    name: banst/awscli
+    entrypoint: [""]
+  only:
+  - Master
+  script:
+    - aws configure set region ap-southeast-1
+    - aws s3 cp index.html s3://web-artifacts-259411494746/index.html
+    - aws autoscaling start-instance-refresh --auto-scaling-group-name web_server_asg
