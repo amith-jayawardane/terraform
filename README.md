@@ -13,3 +13,11 @@ terraform init
 terraform plan
 terraform apply
 ```
+
+## Improvements Required
+|Improvement|Reason|
+|----------|-------|
+|Integrating WAF with ALB|To improve the security|
+|Enabling HTTPS as the listener and configure redirection rule|To improve security using encryption in transit|
+|Assigning role to the EC2 servers|Providing AWS credentials as environment variables is not secure|
+|Encrypt bucket objects|Encryption at rest to improve security|
